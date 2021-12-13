@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import Navbar from './Navbar';
 import store from '../redux/configureStore';
 import MyProfile from './pages/MyProfile';
-import RocketPage from './pages/RocketPage';
+import RocketPage from './pages/rocketpage/RocketPage';
 import MissionPage from './pages/MissionPage';
 import DragonPage from './pages/DragonPage';
 import NotMatch from './pages/NotMatch';

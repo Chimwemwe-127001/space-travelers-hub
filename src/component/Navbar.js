@@ -19,7 +19,7 @@ const Navbar = () => (
           Mission
         </NavLink>
       </li>
-      <li key={3}>
+      <li key={4}>
         <NavLink to="/Myprofile" className={(navData) => (navData.isActive ? 'active-link' : '')}>
           My Profile
         </NavLink>

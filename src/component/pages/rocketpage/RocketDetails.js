@@ -10,7 +10,7 @@ const RocketDetails = ({
       {reserved && <span className="reserve-tag">reserved</span>}
       {description}
     </p>
-    <button type="button" onClick={(id) => buttonHandler(id)} className={reserved ? 'reserve-btn cancel-btn' : 'reserve-btn'}>reserve rocket</button>
+    <button type="button" onClick={(id) => buttonHandler(id)} className={reserved ? 'reserve-btn cancel-btn' : 'reserve-btn'}>{reserved ? 'cancel reservation' : 'reserve rocket'}</button>
   </div>
 );
 

@@ -11,10 +11,8 @@ const RocketPage = () => {
 
   const handleReservation = (e, id) => {
     if (e.target.innerHTML === 'reserve rocket') {
-      e.target.innerHTML = 'cancel reservation';
       dispatch(reserveRockets(id));
     } else {
-      e.target.innerHTML = 'reserve rocket';
       dispatch(cancelReservation(id));
     }
   };

@@ -4,17 +4,20 @@ import { useDispatch, useSelector } from 'react-redux';
 import Navbar from './Navbar';
 import { fetchDragon } from '../redux/dragon/dragon';
 import MyProfile from './pages/MyProfile';
-import RocketPage from './pages/RocketPage';
+import RocketPage from './pages/rocketpage/RocketPage';
 import MissionPage from './pages/MissionPage';
 import DragonPage from './pages/DragonPage/DragonPage';
 import NotMatch from './pages/NotMatch';
+import { getRockets } from '../redux/rocket/rocket';
 
 const SpaceContainer = () => {
   const dispatch = useDispatch();
   const dragonDetail = useSelector((state) => state.dragonReducer);
   useEffect(() => {
     dispatch(fetchDragon());
+    dispatch(getRockets());
   }, []);
+
   return (
     <div>
       <Navbar />

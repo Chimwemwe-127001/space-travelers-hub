@@ -8,7 +8,7 @@ import rocketReducer from './rocket/rocket';
 const reducer = combineReducers({
   dragonReducer,
   missionReducer,
-  rocketReducer,
+  rocket: rocketReducer,
 });
 
 const store = createStore(

@@ -1,16 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Provider } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Navbar from './Navbar';
-import store from '../redux/configureStore';
 import MyProfile from './pages/MyProfile';
 import RocketPage from './pages/rocketpage/RocketPage';
 import MissionPage from './pages/MissionPage';
 import DragonPage from './pages/DragonPage';
 import NotMatch from './pages/NotMatch';
+import { getRockets } from '../redux/rocket/rocket';
 
-const SpaceContainer = () => (
-  <Provider store={store}>
+const SpaceContainer = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getRockets());
+  }, []);
+
+  return (
     <div>
       <Navbar />
       <Routes>
@@ -21,7 +27,7 @@ const SpaceContainer = () => (
         <Route path="*" element={<NotMatch />} />
       </Routes>
     </div>
-  </Provider>
-);
+  );
+};
 
 export default SpaceContainer;

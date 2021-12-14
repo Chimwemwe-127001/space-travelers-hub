@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import './rocket.css';
 import Rocket from './Rocket';
-import { cancelReservation, getRockets, reserveRockets } from '../../../redux/rocket/rocket';
+import { cancelReservation, reserveRockets } from '../../../redux/rocket/rocket';
 
 const RocketPage = () => {
   const dispatch = useDispatch();
@@ -18,10 +18,6 @@ const RocketPage = () => {
       dispatch(cancelReservation(id));
     }
   };
-
-  useEffect(() => {
-    dispatch(getRockets());
-  }, []);
 
   return (
     <div className="rocket-page d-flex a-center j-center f-col">

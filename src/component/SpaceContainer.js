@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import { fetchDragon } from '../redux/dragon/dragon';
 import MyProfile from './pages/MyProfile';
 import RocketPage from './pages/rocketpage/RocketPage';
-import MissionPage from './pages/MissionPage';
+import MissionsPage from './pages/missionpage/missionPage';
 import DragonPage from './pages/DragonPage/DragonPage';
 import NotMatch from './pages/NotMatch';
 import { getRockets } from '../redux/rocket/rocket';
@@ -24,7 +24,7 @@ const SpaceContainer = () => {
       <Routes>
         <Route path="/Myprofile" element={<MyProfile />} />
         <Route path="/" element={<RocketPage />} exact />
-        <Route path="/Mission" element={<MissionPage />} />
+        <Route path="/Mission" element={<MissionsPage />} />
         <Route path="/Dragon" element={<DragonPage dragonDetail={dragonDetail} />} />
         <Route path="*" element={<NotMatch />} />
       </Routes>

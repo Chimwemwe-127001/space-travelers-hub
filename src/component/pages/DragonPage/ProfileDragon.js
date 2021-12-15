@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 
-const Profilerocket = () => {
+const ProfileDragon = () => {
   const dragonDetail = useSelector((state) => state.dragonReducer);
   const reservedDragon = dragonDetail.filter((dragon) => dragon.reserved === true);
   const dragonEmpty = reservedDragon.length <= 0;
@@ -17,4 +17,4 @@ const Profilerocket = () => {
   );
 };
 
-export default Profilerocket;
+export default ProfileDragon;

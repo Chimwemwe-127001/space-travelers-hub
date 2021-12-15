@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <ul className="nav-ul d-flex a-center j-center">
         <li key={1}>
-          <NavLink to="/" exact className={(navData) => (navData.isActive ? 'active-link' : '')}>
+          <NavLink to="/" className={(navData) => (navData.isActive ? 'active-link' : '')}>
             Rocket
           </NavLink>
         </li>

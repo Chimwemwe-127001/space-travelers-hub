@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`testing the app testing RocketPage UI 1`] = `" <div class=\\"rocket-page d-flex a-center j-center f-col\\"></div>"`;
+exports[`testing the app testing RocketPage UI 1`] = `"<div class=\\"rocket-page d-flex a-center j-center f-col\\"></div>"`;

@@ -4,32 +4,32 @@ import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
 import { Provider } from 'react-redux';
 import store from '../redux/configureStore';
-import RocketPage from '../component/pages/rocketpage/RocketPage';
+import DragonPage from '../component/pages/DragonPage/DragonPage';
 
-let containers = null;
+let container = null;
 beforeEach(() => {
   // setup a DOM element as a render target
-  containers = document.createElement('div');
-  document.body.appendChild(containers);
+  container = document.createElement('div');
+  document.body.appendChild(container);
 });
 
 afterEach(() => {
   // cleanup on exiting
-  unmountComponentAtNode(containers);
-  containers.remove();
-  containers = null;
+  unmountComponentAtNode(container);
+  container.remove();
+  container = null;
 });
 
 describe('testing the app', () => {
-  it('testing RocketPage UI', () => {
+  it('testing DragonPage UI', () => {
     act(() => {
       render(
         <Provider store={store}>
-          <RocketPage />
-        </Provider>, containers,
+          <DragonPage />
+        </Provider>, container,
       );
     });
 
-    expect(pretty(containers.innerHTML)).toMatchSnapshot();
+    expect(pretty(container.innerHTML)).toMatchSnapshot();
   });
 });

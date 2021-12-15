@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { reserveDragon, cancelReserve } from '../../../redux/dragon/dragon';
 import './dragon.css';
 
-const DragonPage = (props) => {
+const DragonPage = () => {
   DragonPage.propTypes = {
     dragonDetail: PropTypes.oneOfType([PropTypes.array]).isRequired,
   };
+  const dragonDetail = useSelector((state) => state.dragonReducer);
   const dispatch = useDispatch();
   const reserve = (id) => {
     dispatch(reserveDragon(id));
@@ -17,7 +18,6 @@ const DragonPage = (props) => {
     dispatch(cancelReserve(id));
   };
 
-  const { dragonDetail } = props;
   return (
     <div>
       {dragonDetail.map((dragonDetail) => (

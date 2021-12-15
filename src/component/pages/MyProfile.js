@@ -1,6 +1,9 @@
+import React from 'react';
+import Profilerocket from './rocketpage/Profilerocket';
+
 const MyProfile = () => (
   <div>
-    <h3>profile</h3>
+    <Profilerocket />
   </div>
 );
 export default MyProfile;

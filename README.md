@@ -6,9 +6,11 @@
 Rockets page                             |  Dragons page
 :---------------------------------------:|:---------------------------------------:
 ![](./project_preview/rockets.png)       |  ![](./project_preview/dragons.png) 
+
 Missions page view                       |  My Profile page
 :---------------------------------------:|:---------------------------------------:
 ![](./project_preview/missions.png)      |  ![](./project_preview/myprofile.png) 
+
 ## Live Demo
 > Click [here](https://space-travelers-hub-react.netlify.app/) to see the live preview of the project.
 

@@ -1,8 +1,16 @@
 # Bookstore
 - In this task, we worked with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and dragons, and join selected space missions.
 
+## Project Preview
+
+Rockets page                             |  Dragons page
+:---------------------------------------:|:---------------------------------------:
+![](./project_preview/rockets.png)       |  ![](./project_preview/dragons.png) 
+Missions page view                       |  My Profile page
+:---------------------------------------:|:---------------------------------------:
+![](./project_preview/missions.png)      |  ![](./project_preview/myprofile.png) 
 ## Live Demo
-> Live link coming soon.
+> Click [here](https://space-travelers-hub-react.netlify.app/) to see the live preview of the project.
 
 ### Built With
 

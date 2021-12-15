@@ -1,6 +1,5 @@
 import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
-import { fireEvent, screen } from '@testing-library/react';
 import { act } from 'react-dom/test-utils';
 import pretty from 'pretty';
 import { Provider } from 'react-redux';
@@ -21,22 +20,12 @@ afterEach(() => {
   container = null;
 });
 
-describe('testing calculator and events', () => {
-  it('testing for events on calculator', () => {
+describe('testing the app', () => {
+  it('testing RocketPage UI', () => {
     act(() => {
       render(<Provider store={store}> <RocketPage /> </Provider>, container);
     });
 
     expect(pretty(container.innerHTML)).toMatchSnapshot();
-
-    fireEvent.click(screen.getAllByText('Reserve Rocket'));
-
-    let displayValue;
-
-    await waitFor(() => {
-      const displayElement = container.innerHTML.querySelectorAll('.reserve-btn');
-    });
-
-    expect(displayValue).toEqual('5');
   })
 })

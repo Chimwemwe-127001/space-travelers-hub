@@ -1,3 +1,12 @@
 * {
   margin: 0;
 }
+
+.myProfile {
+  display: flex;
+  margin-top: 40px;
+}
+
+.myProfile .profile-rocket {
+  margin-left: 20px;
+}

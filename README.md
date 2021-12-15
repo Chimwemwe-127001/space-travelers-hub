@@ -1,4 +1,4 @@
-# Bookstore
+# Space-Travelers'-Hub
 - In this task, we worked with the real live data from the SpaceX API. Our task was to build a web application for a company that provides commercial and scientific space travel services. The application allows users to book rockets and dragons, and join selected space missions.
 
 ## Project Preview
